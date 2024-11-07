@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IS2 Learning</title>
+    <link rel="icon" href="IS2 LEarning.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/IS2-CSS.css">
+</head>
+<body>
+    <header class="Navbar">
+        <a href="https://www.google.com/?fpdoodle=1&doodle=306734893&hl=en&gl=PH" class="NavLogo">
+            <img class="logo" src="pics/IS2 LEarning.png" alt="IS2 Logo">
+            <img class="LogoName" src="pics/LogoName.png" alt="Logo Name">
+        </a>
+        <nav>
+            <ul class="nav-list">
+                <li><a class="navlister1" href="#first-block">About Us</a></li>
+                <li><a class="navlister1" href="#second-block">Learning Materials</a></li>
+                <li><a class="navlister2" href="#third-block">Contact us!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="head-intro">
+        <article id="third-block">
+            <h3 class="h3-color">Learn how to create the content that matters.</h3>
+            <h1 class="h1-color">Educate yourself to become <br> who you wanted to be.</h1>
+        </article>
+        <a class="navlisters" id="buts" href="html/registration form.html" target="_blank">Connect With us &#x2192;</a>
+    </section>
+
+    <section class="head-intro1">
+        <video autoplay muted loop class="vids">
+            <source src="vids/teaser.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="head-intro2" id="first-block">
+        <div class="h1-color1">
+            <div class="background">
+                <h1 id="color">8</h1>
+                <span id="disp">founders</span>
+            </div>
+        </div>
+        <div class="h1-color1"> 
+            <div class="background1">
+                <h1 id="color1">10M&#43;</h1>
+                <span id="disp">Learners</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="head-intro1">
+        <video autoplay muted loop class="vids">
+            <source src="vids/meow.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <script>
+        window.scrollTo(0, 0);
+
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.Navbar');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll === 0) {
+                
+                navbar.style.opacity = '1'; 
+            } else if (currentScroll > lastScrollTop) {
+                
+                navbar.style.opacity = '0'; 
+            } else {
+                
+                navbar.style.opacity = '1'; 
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+    </script>
+</body>
+</html>
