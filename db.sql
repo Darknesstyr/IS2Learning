@@ -1,1 +1,1 @@
-mysqldump -u username -p database_name > database_name.sql
+mysqldump -u sql12743158 -p sql12743158 > sql12743158.sql
